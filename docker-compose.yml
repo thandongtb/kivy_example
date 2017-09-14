@@ -1,0 +1,8 @@
+version: '2'
+services:
+  kivy_face:
+    container_name: kivy_face
+    build: .
+    volumes:
+     - .:/code
+    command: bash -c "python /code/camera.py"
